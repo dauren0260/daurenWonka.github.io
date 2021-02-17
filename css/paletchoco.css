@@ -80,12 +80,6 @@ div.title{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    background-image: linear-gradient(#fef8f0,#ede2dc);
-    background-size: 100% 70%;
-    background-position: 0 80%;
-    background-repeat: no-repeat;
-
     width: 100%;
     margin-top: 80px;
 }
@@ -150,7 +144,6 @@ div.title{
     .goods-container{
         width: 70%;
         margin: 0 auto;
-        background-image: linear-gradient(transparent,transparent);
     }
 
     .goods-item{
