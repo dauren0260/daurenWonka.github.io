@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="chocolate, palet, praline, truffles">
+    <meta name="description"
+        content="Willy Wonka makes the best chocolates for you. Let's embrace the chaos, embrace the love of chocolate in this freezing world. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Wonka | Chocolate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./vendors/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <script src="./js/jqueryv3.5.1.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Wonka Chocolate</h1>
+                <a href="./index.html"><img src="./image/header/logo.png" alt="Wonka logo"></a>
+            </div>
+
+            <div class="menu" id="menu">
+                <ul class="function_menu">
+                    <li><a>Log in / Sign up</a></li>
+                    <li><a>Cart(0)</a></li>
+                    <li>
+                        <input type="text">
+                        <button type="submit"></button>
+                    </li>
+                </ul>
+
+                <ul class="main_menu">
+                    <li>
+                        <a href="./product.html" class="product" id="product">
+                            Products
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="subMenu product" id="subProduct">
+                            <div class="outer">
+                                <div class="wrap type">
+                                    <h3 id="chocolate">
+                                        Chocolate
+                                        <i class="fas fa-angle-down"></i>
+                                    </h3>
+                                    <ul class="list" id="chocoList">
+                                        <li><a href="./paletchoco.html">Palet Chocolate</a></li>
+                                        <li><a href="javascript:;">Truffles</a></li>
+                                        <li><a href="javascript:;">Pralines</a></li>
+                                        <li><a href="javascript:;">Wonka Biscuits</a></li>
+                                        <li><a href="javascript:;">Wonka Bar</a></li>
+                                        <li><a href="javascript:;">Wonka Special</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="wrap gift">
+                                    <h3 id="gifts">
+                                        Gifts
+                                        <i class="fas fa-angle-down"></i>
+                                    </h3>
+                                    <ul class="list" id="giftsList">
+                                        <li><a href="javascript:;">Anniversary Gifts</a></li>
+                                        <li><a href="javascript:;">Birthday Gifts</a></li>
+                                        <li><a href="javascript:;">Baby Showers</a></li>
+                                        <li><a href="javascript:;">Congratulations Gifts</a></li>
+                                        <li><a href="javascript:;">Thank You Gifts</a></li>
+                                        <li><a href="javascript:;">Weddings & Bridal Showers</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="wrap special">
+                                    <h3 id="newArrivals">New Arrivals</h3>
+                                    <ul class="list">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <img src="./image/header/newarrival.jpg" alt="New Arrivals">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="wrap allChoco">
+                                    <h3 id="allChoco"><a href="./product.html">All Chocolate</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./workshops.html" class="workshops" id="workshops">Workshops</a></li>
+                    <li>
+                        <a href="./factorytour.html" class="factory" id="factory">
+                            Factory Tour
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="subMenu factory" id="subFactory">
+                            <div class="outer">
+                                <div class="wrap">
+                                    <h3>Opening Time</h3>
+                                    <ul class="list">
+                                        <li><a href="./factorytour.html"><img src="./image/header/wonka-gate.png"
+                                                    alt="wonka factory"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="wrap">
+                                    <h3>Tickets</h3>
+                                    <ul class="list">
+                                        <li><a href="./factorytour.html"><img src="./image/header/ticket.png"
+                                                    alt="wonka ticket"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wrap access">
+                                    <h3>Access</h3>
+                                    <ul class="list">
+                                        <li><a href="./factorytour.html"><img src="./image/header/access.png"
+                                                    alt="wonka ticket"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="account" id="account">
+                            Account
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="subMenu account" id="subAccount">
+                            <div class="outer">
+                                <div class="wrap">
+                                    <h3 id="member">
+                                        Member Center
+                                        <i class="fas fa-angle-down"></i>
+                                    </h3>
+                                    <ul class="list" id="memberList">
+                                        <li><a href="javascript:;">Personal information</a></li>
+                                        <li><a href="javascript:;">My Orders</a></li>
+                                        <li><a href="javascript:;">My Coupons</a></li>
+                                        <li><a href="javascript:;">My Inbox</a></li>
+                                        <li><a href="javascript:;">Account Settings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="wrap">
+                                    <h3 id="customer">
+                                        Customer Service
+                                        <i class="fas fa-angle-down"></i>
+                                    </h3>
+                                    <ul class="list" id="customerList">
+                                        <li><a href="javascript:;">Order Tracking</a></li>
+                                        <li><a href="javascript:;">Shipping Information</a></li>
+                                        <li><a href="javascript:;">Return Policy</a></li>
+                                        <li><a href="javascript:;">FAQ</a></li>
+                                        <li><a href="javascript:;">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class="hamburger-icon" id="hamburgerIcon">
+                <span class="hr top"></span>
+                <span class="hr middle"></span>
+                <span class="hr bottom"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="carousel">
+                <ul class="imgList" id="imgList">
+                    <li><img src="./image/index/banner1.jpg" alt="banner"></li>
+                </ul>
+
+                <div class="indicator clearfix" id="indicator">
+                    <a href="javascript:;" class="clearfix"></a>
+                    <a href="javascript:;" class="clearfix"></a>
+                    <a href="javascript:;" class="clearfix"></a>
+                </div>
+
+
+            </div>
+            <p>The Best Thing Happen to Chocolate Since <span class="txt-rotate" data-period="1500" data-rotate='["Willy", "Wonka", "Willy Wonka."]'></span></p>
+
+        </div>
+
+
+        <div class="title">
+            <h3>Products</h3>
+        </div>
+
+        <div class="product-container">
+            <div class="choco-list">
+                <div class="choco-collect">
+                    <div class="img-container">
+                        <a href="./paletchoco.html"><img src="./image/index/palet-collect.jpg" alt="palet"
+                                id="paletCollect"></a>
+                    </div>
+                    <p>Palet</p>
+                </div>
+                <div class="choco-collect">
+                    <div class="img-container">
+                        <a href="javascript:;"><img src="./image/index/truffle-collect.png" alt="Truffles"
+                                id="truffleCollect"></a>
+                    </div>
+                    <p>Truffles</p>
+                </div>
+                <div class="choco-collect">
+                    <div class="img-container">
+                        <a href="javascript:;"><img src="./image/index/praline-collect.jpg" alt="Praline"
+                                id="pralineCollect"></a>
+                    </div>
+                    <p>Praline</p>
+                </div>
+                <div class="choco-collect">
+                    <div class="img-container">
+                        <a href="javascript:;"><img src="./image/index/biscuit-collect.jpg" alt="Wonka Biscuits"
+                                id="biscuitCollect"></a>
+                    </div>
+                    <p>Wonka Biscuits</p>
+                </div>
+                <div class="choco-collect">
+                    <div class="img-container">
+                        <a href="javascript:;"><img src="./image/index/bar-collect.jpg" alt="Wonka Bar"
+                                id="barCollect"></a>
+                    </div>
+                    <p>Wonka Bar</p>
+                </div>
+                <div class="choco-collect">
+                    <div class="img-container">
+                        <a href="javascript:;"><img src="./image/index/special-collect.jpg" alt="Wonka Special" id="specialCollect"></a>
+                    </div>
+                    <p>Wonka Special</p>
+                </div>
+            </div>
+
+
+            <div class="product-demo">
+                <img src="./image/index/pink-plate.png" alt="pink plate">
+
+                <div class="plate-inner">
+                    <img src="./image/index/palet-demo.png" alt="product demo" id="demoArea">
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h3>New arrivals</h3>
+        </div>
+
+        <div class="new-arrival-item">
+            <div class="container-new" id="newContainer">
+
+                <div class="item new" id="first">
+                    <a href="javascript:;"><img src="./image/index/angel-tear.png" alt="Angel Tear"></a>
+                    <p>Angel Tear</p>
+                </div>
+                <div class="item new" id="second">
+                    <a href="javascript:;"><img src="./image/index/cupid-luck.png" alt="Cupid Luck"></a>
+                    <p>Cupid Luck</p>
+                </div>
+                <div class="item new" id="third">
+                    <a href="./product-dark-mars.html"><img src="./image/product/palet/dark-mars.png"
+                            alt="Dark Mars"></a>
+                    <p>Dark Mars</p>
+                </div>
+                <div class="item new" id="fourth">
+                    <a href="javascript:;"><img src="./image/index/lava-crater.png" alt="Lava Crater"></a>
+                    <p>Lava Crater</p>
+                </div>
+                <div class="item new" id="fifth">
+                    <a href="javascript:;"><img src="./image/index/blue-moon.png" alt="Blue Moon"></a>
+                    <p>Blue Moon</p>
+                </div>
+
+            </div>
+
+            <button class="btn next" id="next">Show Next
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <div class="title">
+            <h3>Workshops</h3>
+        </div>
+
+
+        <div class="slogan">
+            <p>Chocolate &nbsp;Workshops &nbsp;for &nbsp;a &nbsp;variety &nbsp;of &nbsp;audiences</p>
+        </div>
+
+        <div class="workshop-course">
+
+            <div class="course-item">
+                <div class="date">
+                    <p>23</p>
+                    <p>Sep</p>
+                </div>
+
+                <a href="./courseInfo.html"><img src="./image/index/course-pic-1.jpg" alt="lava cake"></a>
+
+                <a href="./courseInfo.html">
+                    <div class="class-info">
+                        <p>Chocolate Addicted Workshop</p>
+
+                        <p>It’s a pratical, fun workshop in a light and fun atmosphere.</p>
+
+                        <div class="class-detail">
+                            <div class="content">
+                                <img src="./image/icon/clock.png" alt="hour-icon">
+                                <div class="text">
+                                    <span>Hour</span>
+                                    <span>13:00 - 16:00</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./image/icon/hat.png" alt="chef-icon">
+                                <div class="text">
+                                    <span>Chef</span>
+                                    <span>Ronan Appello</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./image/icon/location.png" alt="location-icon">
+                                <div class="text">
+                                    <span>Location</span>
+                                    <span>Givatayim</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./image/icon/dollars.png" alt="price-icon">
+                                <div class="text">
+                                    <span>Price</span><br>
+                                    <span>$280</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="course-item">
+                <div class="date">
+                    <p>07</p>
+                    <p>Oct</p>
+                </div>
+
+                <a href="javascript:;"><img src="./image/index/course-pic-2.jpg" alt="lava cake"></a>
+
+                <a href="javascript:;">
+                    <div class="class-info">
+                        <p>The Art of Bean to Bar Workshop</p>
+
+                        <p>It’s a pratical, fun workshop in a light and fun atmosphere.</p>
+
+                        <div class="class-detail">
+                            <div class="content">
+                                <img src="./image/icon/clock.png" alt="hour-icon">
+                                <div class="text">
+                                    <span>Hour</span>
+                                    <span>14:00 - 17:00</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./image/icon/hat.png" alt="chef-icon">
+                                <div class="text">
+                                    <span>Chef</span>
+                                    <span>Ronan Appello</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./image/icon/location.png" alt="location-icon">
+                                <div class="text">
+                                    <span>Location</span>
+                                    <span>Givatayim</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./image/icon/dollars.png" alt="price-icon">
+                                <div class="text">
+                                    <span>Price</span><br>
+                                    <span>$280</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <button class="btn">More</button>
+
+        </div>
+
+        <div class="title">
+            <h3>Factory Tour</h3>
+
+            <p class="caption">We invite you to a wonderful world that is overflowing with love for chocolate.</p>
+
+        </div>
+
+        <div class="factory-container">
+            <div class="factory-detail">
+                <div class="month">
+                    <span id="month"></span>
+                    <span id="day"></span>
+                </div>
+
+
+                <div class="time">
+                    <span id="hour"></span>：
+                    <span id="min"></span>：
+                    <span id="sec"></span>
+                </div>
+
+                <div class="status" id="status">
+                    We are open !
+                </div>
+            </div>
+
+        </div>
+
+        <p class="open-time">Opening Time : Tue - Sun | 09:00 - 18:00</p>
+
+        <div class="moreinfo-factory">
+            <button class="btn tickets">Tickets</button>
+            <button class="btn access">Access</button>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div class="title">
+            <h3>Contact us</h3>
+        </div>
+
+        <div class="contact-container">
+            <div class="section">
+                <div class="heading">
+                    <img src="./image/icon/phone.png" alt="phone">
+                    <p>Phone</p>
+                </div>
+
+                <p>(255)352-6258</p>
+            </div>
+            <div class="section">
+                <div class="heading">
+                    <img src="./image/icon/headquarter.png" alt="location">
+                    <p>Headquarter</p>
+                </div>
+
+                <p>wonka Rd. #254 <br> UNITED KINDOM</p>
+            </div>
+            <div class="section">
+                <div class="heading">
+                    <img src="./image/icon/email.png" alt="email">
+                    <p>Email</p>
+                </div>
+
+                <p>service@wonka.com</p>
+            </div>
+        </div>
+
+        <div class="subscribe-title">
+            <h3>Subscribe</h3>
+        </div>
+        <div class="subscribe-container">
+            <p>Get discount and newest information</p>
+
+            <div class="subscribe-content">
+                <input type="email" placeholder="Enter your email">
+                <button class="btn send">Send</button>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <ul class="contact-section">
+                <li>Customer Service</li>
+                <li><a href="javascript:;">Order Tracking</a></li>
+                <li><a href="javascript:;">Shipping Info</a></li>
+                <li><a href="javascript:;">Return Policy</a></li>
+            </ul>
+
+            <ul class="contact-section">
+                <li>About Us</li>
+                <li><a href="javascript:;">Privacy</a></li>
+                <li><a href="javascript:;">Career</a></li>
+                <li><a href="javascript:;">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+
+        <ul class="social-media">
+            <li><a href="javascript:;"><img src="./image/icon/facebook.png" alt="facebook"></a></li>
+            <li><a href="javascript:;"><img src="./image/icon/instagram.png" alt="instagram"></a></li>
+            <li><a href="javascript:;"><img src="./image/icon/twitter.png" alt="twitter"></a></li>
+            <li><a href="javascript:;"><img src="./image/icon/linkedin.png" alt="linkedin"></a></li>
+        </ul>
+
+        <div class="to_top" id="to_top"> 
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </div>
+    </footer>
+
+    <script src="./js/tools.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

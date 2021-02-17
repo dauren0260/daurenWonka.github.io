@@ -1,0 +1,534 @@
+h1{
+    display: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    margin: 10px;
+    width: 250px;
+}
+
+div.menu {
+    margin-top: 7px;
+}
+
+div.menu > ul{
+    font-size: 0;
+}
+
+/* function menu */
+
+.function_menu>li,
+.main_menu>li {
+    display: inline-block;
+    text-align: right;
+    color: #681116;
+    font-size: 18px;
+}
+
+.function_menu>li:nth-child(3)>input {
+    width: 150px;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border-bottom: 1px solid #681116;
+    margin-left: 10px;
+
+}
+
+.function_menu button{
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: #fff;
+    background-image: url("../image/icon/search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:right center;
+    cursor: pointer;
+}
+
+.function_menu button:focus,
+.function_menu input:focus{
+    outline: none;
+
+}
+
+.main_menu {
+    position: relative;
+    margin-top: 10px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #681116;
+}
+
+.function_menu a{
+    font-size: 16px;
+}
+
+.menu a:hover {
+    background-image: linear-gradient(rgba(104,17, 22,.5),rgb(104,17, 22));
+    border-radius: 3px;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.wrap.special .list a:hover{
+    background-image: linear-gradient(transparent,transparent);
+}
+
+.subMenu.factory .list a:hover{
+    background-image: linear-gradient(transparent,transparent);
+}
+
+
+/* subMenu */
+
+.subMenu::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #681116;
+    transform: rotate(45deg);
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+}
+
+
+/* product */
+.subMenu.product::before {
+    top: -10.5px;
+    right: 45.5%;
+}
+
+.subMenu {
+    width: 900px;
+    height: 340px;
+    margin: 0 auto;
+    border: 2px solid #681116;
+    text-align: left;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+
+.subMenu ul > li img{
+    border: 1px solid #681116;
+}
+
+.subMenu ul {
+    vertical-align: top;
+    font-size: 18px;
+    border-right: 1px solid #212121;
+    padding-right: 50px;
+}
+
+.wrap.allChoco{
+    display: none;
+}
+
+
+
+
+/* 子選單標題 */
+.subMenu a {
+    line-height: 20px;
+    text-decoration: none;
+    color: #212121;
+}
+
+.subMenu h3{
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.subMenu i{
+    display: none;
+}
+
+.outer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.wrap{
+    margin: 25px 0 0px 10px;
+}
+
+.wrap.special ul,
+.wrap.access ul{
+    border-right: none;
+}
+
+.main_menu>li>a.product:hover~.subMenu.product,
+.subMenu.product:hover {
+    display: block;
+    z-index: 100;  
+}
+
+
+/* factory */
+.subMenu.factory::before {
+    top: -10.5px;
+    right: 18.5%;
+}
+
+.main_menu>li>a.factory:hover~.subMenu.factory,
+.subMenu.factory:hover {
+    display: block;
+    z-index: 100;
+}
+
+
+/* account */
+.subMenu.account .outer{
+    display: flex;
+    justify-content: center;
+}
+.subMenu.account::before {
+    top: -10.5px;
+    right: 4%;
+}
+
+.subMenu.account .wrap:nth-child(2) ul{
+    border-right: none;
+}
+
+
+ul.main_menu>li>a.account:hover~.subMenu.account,
+.subMenu.account:hover {
+    display: block;
+    z-index: 100;
+}
+
+.subMenu.account li,
+.subMenu.account h3{
+    text-align: left;
+}
+
+.subMenu.account a{
+    line-height: 1.5;
+}
+
+/* hamburger */
+.hamburger-icon{
+    height: 42px;
+    width: 42px;
+    margin: 10px;
+    position: relative;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+
+.hamburger-icon .hr{
+    display: inline-block;
+    width: 80%;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #681116;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all linear .2s;
+}
+
+.hamburger-icon .hr.top{
+    top: 25%;
+}
+.hamburger-icon .hr.bottom{
+    top: 75%;
+}
+
+.hamburger-icon.on .hr.top{
+    transform-origin: top left;
+    left: 8px;
+    top: 10px;
+    transform: rotate(45deg);
+    background-color: rgba(104, 17, 22, .5);
+
+}
+
+.hamburger-icon.on .hr.middle{
+    display: none;
+}
+.hamburger-icon.on .hr.bottom{
+    transform-origin: top left;
+    top: auto;
+    left: 4px;
+    bottom: 4px;
+    transform: rotate(-45deg);
+    background-color: rgba(104, 17, 22, .5);
+
+}
+
+
+/* RWD */
+@media screen and (max-width:1200px){
+    
+    header{
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+
+
+
+    .hamburger-icon{
+        display: inline-block;
+    }
+
+    nav{
+        width: 90%;
+    }
+
+    .logo img {
+        width: 150px;
+        max-width: 100%;
+    }
+
+    div.menu{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 72px;
+        display: none;
+        z-index: 100;
+        background-color: #fff;
+    }
+
+    div.menu.open{
+        display: block;
+        padding: 0 10%;
+    }
+
+    div.menu li{
+        text-align: left;
+    }
+
+    .main_menu>li{
+        display: block;
+    }
+
+    .wrap{
+        display: block;
+        margin: 0;
+    }
+
+    .wrap.allChoco{
+        display: block;
+    }
+
+    .wrap.allChoco a{
+        padding: 0;
+        margin-left: 0;
+        color: #212121;
+    }
+
+    .menu a:hover,
+    .menu h3:hover {
+        background-image: linear-gradient(transparent,transparent);
+        color: #681116;
+    }
+
+    .subMenu i{
+        display: inline-block;
+    }
+
+    .main_menu i{
+        display: inline-block;
+    }
+
+    .factory i{
+        display: none;
+    }
+    
+    /* function_menu */
+    ul.function_menu li{
+        margin: 20px 0;
+    }
+
+    ul.function_menu li:nth-child(2){
+        float: right;
+        margin-right: 10px;
+    }
+
+    ul.function_menu li:nth-child(3){
+        display: block;
+        margin: 10px auto;
+    }
+
+    ul.function_menu li:nth-child(3) input{
+        width: 90%;
+    }
+
+    /* subMenu 次選單 */
+    .subMenu{
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .subMenu::before{
+        display: none;
+    }
+
+    .subMenu h3{
+        padding: 10px 25px;
+        margin: 0;
+        cursor: pointer;
+        color: #212121;
+        font-weight: normal;
+        background-image: linear-gradient(transparent,transparent);
+
+    }
+
+    .subMenu h3.open{
+        display: block;
+    }
+
+    .subMenu a{
+        margin-left: 25px;
+    }
+
+    .subMenu .wrap.type{
+        margin: 0;
+        padding: 0;
+    }
+    .subMenu.factory > ul:nth-child(2){
+        margin: 0;
+    }
+
+    .subMenu li{
+        display: block;
+    }
+
+    .subMenu ul{
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-right: none;
+    }
+
+    .subMenu.factory>ul:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .subMenu.factory > ul{
+        height: auto;
+        padding: 0;
+    }
+    
+    .subMenu.account .outer{
+        display: block;
+    }
+
+    .menu > ul{
+        box-sizing: border-box;
+        padding:0 10%;
+    }
+
+    .main_menu img{
+        display: none;
+    }
+
+    .subMenu li:nth-child(1){
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .subMenu div:first-child{
+        margin: 0;
+        display: block;
+    }
+
+    .main_menu > li > a{
+        font-size: 22px;
+        color: #212121;
+        margin-top: 20px;
+    }
+
+    ul.list{
+        display: none;
+    }
+
+    ul.list.open{
+        display: block;
+    }
+
+    .wrap h3{
+        display: none;
+    }
+
+    .wrap .show{
+        display: block;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    div.menu.open{
+        padding: 0;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 576px){
+
+    /* function_menu */
+
+    ul.function_menu li:nth-child(3) input{
+        width: 85%;
+    }
+
+}
+

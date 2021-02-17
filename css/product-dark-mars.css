@@ -1,0 +1,254 @@
+/* header */
+.menu a.product{
+    background-image: linear-gradient(rgba(104,17, 22,.5),rgb(104,17, 22));
+    color: #f1f1f1;
+    border-radius: 3px;
+} 
+
+
+
+.banner > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.banner-sole{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 200px;
+
+    background-image: url("../image/product/banner-single.jpg");
+    background-size: 100% 400px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    opacity: .9;
+}
+
+.banner-sole > div{
+    display: inline-block;
+    vertical-align: top;
+    transform: translateY(130px);
+}
+
+.per-product > img{
+    width: 400px;
+}
+
+
+
+.thumbnail > a{
+    width: 60px;
+    display: inline-block;
+}
+
+.thumbnail > a:first-child{
+    border: 1px solid #212121;
+}
+
+.thumbnail img{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.detail{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+
+.flavor > select{
+    font-size: 18px;
+    border:1px solid #681116;
+}
+
+.detail-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail > div.price{
+    font-size: 22px;
+    margin-bottom:20px ;
+    display: block;
+}
+
+.per-info{
+    width: 40vw;
+    min-width: 520px;
+    background-color: white;
+    /* border: 1px solid red; */
+    text-align: left;
+    padding:50px 60px 0;
+}
+
+.per-info > p{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.per-info > p:first-child{
+    font-size: 40px;
+    color: #681116;
+}
+.quantity{
+    width: 100px;
+}
+
+.quantity > input{
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    border: none;
+}
+
+
+button.quantity-btn{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #681116;
+}
+
+button.btn.add-cart{
+    margin: 30px 0 0px auto;
+}
+
+button.btn{
+    font-size: 16px;
+    padding: 7px 10px;
+}   
+
+
+/* sub-detail */
+
+.detail-title > a{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #212121;
+}
+
+.detail-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-detail{
+    margin-top: 20px;
+}
+
+.more-detail{
+    display: none;
+}
+
+.more-detail.open{
+    display: block;
+}
+
+
+
+/* related-product */
+.related-product{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.related-container{
+    width: 870px;
+    margin: 0 auto;
+}
+
+.related-item img{
+    width: 150px;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+
+.related-item img:hover{
+    transform: translateY(-15px) scale(1.2);
+}
+
+.related-item{
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .per-info{
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 576px){
+    
+    .banner-sole{
+        background-size: 100% 200px;
+    }
+
+    .banner-sole > div{
+        transform: translateY(80px);
+    }
+    
+    .per-product > img{
+        width: 250px;
+    }
+    
+    .per-info{
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .per-info > p{
+        font-size: 16px;
+    }
+
+    .per-info > p:first-child{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .detail{
+        font-size: 20px;
+    }
+
+    .detail > div.price{
+        font-size: 20px;
+    }
+
+    .flavor > select{
+        font-size: 16px;
+    }
+
+    .quantity{
+        width: auto;
+    }
+
+    .quantity > div{
+        margin: 0 20px;
+    }
+
+    button.btn{
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+
+    .related-item{
+        margin: 20px;
+    }
+
+
+}
